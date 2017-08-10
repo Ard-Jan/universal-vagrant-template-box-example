@@ -17,7 +17,7 @@ config:
     'github.com'
   ]
   restart_services: [
-    'elasticsearch'
+    'crond'
   ]
   copy_files: [
     {
