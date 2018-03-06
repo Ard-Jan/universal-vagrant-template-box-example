@@ -45,6 +45,14 @@ config:
           execute_dir: "web",
           command: 'rm -rf index_*'
         }
-      ]
+      ],
+      environment_variables_file: {
+        APP_DEBUG: 'true'
+      },
+      environment_variables_web_server: {
+        DB_HOST: '127.0.0.1',
+        DB_USER: 'mysql',
+        DB_PASSWORD: 'password'
+      }
     }
   ]
